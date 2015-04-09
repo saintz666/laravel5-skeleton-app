@@ -30,7 +30,6 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-        throw new \App\Exceptions\General();
 		return view('site.home');
 	}
 

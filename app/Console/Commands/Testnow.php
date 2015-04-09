@@ -25,20 +25,20 @@ class Testnow extends Command
      *
      * @return array
      */
-    protected function getArguments()
-    {
-        return [[ 'parm', InputArgument::REQUIRED, 'Parameter' ]];
-    }
+//    protected function getArguments()
+//    {
+//        return [[ 'parm', InputArgument::REQUIRED, 'Parameter' ]];
+//    }
 
     /**
      * Get the console command options.
      *
      * @return array
      */
-    protected function getOptions()
-    {
-        return [[ 'flag', null, InputOption::VALUE_NONE, 'Flag', null ]];
-    }
+//    protected function getOptions()
+//    {
+//        return [[ 'flag', null, InputOption::VALUE_NONE, 'Flag', null ]];
+//    }
 
     /**
      * Execute the console command.
@@ -47,10 +47,10 @@ class Testnow extends Command
      */
     public function handle()
     {
-        $parm = $this->argument( 'parm' );
-        $flag = $this->option( 'flag' );
+//        $parm = $this->argument( 'parm' );
+//        $flag = $this->option( 'flag' );
 
-        throw new \App\Exceptions\General();
+//        throw new \App\Exceptions\General();
 
         $this->info( 'Done!' );
     }
