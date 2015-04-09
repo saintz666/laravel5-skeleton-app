@@ -1,0 +1,15 @@
+.env
+.idea
+.DS_Store
+_ide_helper.php
+/vendor
+bootstrap/compiled.php
+/*.csv
+/*.txt
+/*.xls
+/*.xlsx
+/*.pptx
+/*.sql
+/*.cpt
+/*.gz
+/*.split

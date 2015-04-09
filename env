@@ -1,0 +1,13 @@
+APP_ENV=development
+APP_DEBUG=true
+APP_KEY=needtosetthistosomerandomstring!
+
+DB_HOST=localhost
+DB_DATABASE=test
+DB_USERNAME=root
+DB_PASSWORD=
+
+EMAIL_FROM_NAME=
+EMAIL_FROM_ADDR=
+SUPPORT_EMAIL_NAME=
+SUPPORT_EMAIL_ADDR=
