@@ -13,12 +13,10 @@
 
 Log::listen( function( $level, $message, $context )
 {
-    $env = env( 'APP_ENV' );
-
-    if ( strtolower( $level ) == 'error' && strpos( $message, 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' ) === false && strpos( $message, 'Illuminate\Session\TokenMismatchException' ) === false )
+    if ( strtolower( $level ) == 'error' )
     {
-        App\Helpers\QuickMail::sendSupport( "<pre>$message</pre>", 'Random Error (' . ucfirst( $env ) . ')' );
+        \App\Helpers\QuickMail::sendSupport( "<pre>$message</pre>", 'App Error (' . ucfirst( env( 'APP_ENV' )) . ')' );
     }
 });
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'HomeController@index');
