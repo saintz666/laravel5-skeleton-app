@@ -44,7 +44,7 @@ and fill in the blanks!
 ### Contributing To This Project
 
 If you have a good idea for something that I should include in this project, feel free send send a pull request. If you
-discover any bugs, feel free to log an issue. You can also contact me via twitter: [https://twitter.com/jamesggordon]
+discover any bugs, feel free to log an issue. You can also contact me via twitter: https://twitter.com/jamesggordon
 
 ### License
 
