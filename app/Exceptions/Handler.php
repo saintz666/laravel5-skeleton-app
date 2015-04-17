@@ -11,7 +11,8 @@ class Handler extends ExceptionHandler {
 	 * @var array
 	 */
 	protected $dontReport = [
-		'Symfony\Component\HttpKernel\Exception\HttpException'
+		'Symfony\Component\HttpKernel\Exception\HttpException',
+        'Symfony\Component\HttpKernel\Exception\NotFoundHttpException'
 	];
 
 	/**
@@ -24,6 +25,8 @@ class Handler extends ExceptionHandler {
 	 */
 	public function report(Exception $e)
 	{
+        if ($this->shouldntReport($e)) return;
+
         \Log::error( (string) $e );
 	}
 
