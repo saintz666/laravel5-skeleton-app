@@ -41,7 +41,7 @@ If you're using this package as the start of a new project, the easist thing to 
 unpack that, change into the newly created project folder and then run `composer install` to download the dependencies.
 Don't forget to rename .env.example to .env and fill in the blanks! Also, if you're running on a Mac or Linux environment,
 you will need to set the permissions on the storage folder so that the web server has write access to it. In a development
-environment, chmod -R 777 storage should be fine, but I would recommend taking a more thoughtful approach in a production
+environment, `chmod -R 777` storage should be fine, but I would recommend taking a more thoughtful approach in a production
 environment.
 
 ### Contributing To This Project
