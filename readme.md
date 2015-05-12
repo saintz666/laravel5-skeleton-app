@@ -33,7 +33,14 @@ Internet Explorer fixes. This may seem trivial, but it has taken a lot of effort
 from CDNs and what files need to be loaded locally in order for all of this stuff to work correctly.
 
 I have also added a `Generic` exception class and a `QuickMail` helper class, which simplifies the task of sending
-emails to myself when serious errors occur.
+emails to myself when serious errors occur. It is **extremely** important that you fill in the correct email address
+in the .env file, otherwise you will receive **nothing** when an exception is thrown, because you will hit an error
+while you are already processing an exception and in that case PHP just seems to give up and halts processing.
+
+Another note on the `resources` folder: I originally removed this, thinking that I didn't need any of its contents.
+It turns out, however, that the strings that the validator uses are stored in the `resources/lang/en` folder and if
+you don't have those you don't get meaningful error messages from the `Validator` class. Furthermore, the location of
+the `resources` folder is hardcoded within Laravel, so it **must** remain in the root of the project.
 
 ### Using this package
 
